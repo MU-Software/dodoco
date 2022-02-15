@@ -1,0 +1,103 @@
+:root {
+  --sidebar-icon-box-width: 36px;
+  --sidebar-icon-box-height: 24px;
+}
+
+body, html, main {
+  font-family: 'Noto Sans KR', sans-serif;
+
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome, Edge, Opera and Firefox */
+
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
+  height: 100vh;
+}
+
+main {
+  position: fixed;
+  height: calc(100vh - 56px);
+  min-height: calc(100vh - 56px);
+  max-height: calc(100vh - 56px);
+  width: calc(100vw - 4.5rem);
+  top: 56px;
+  left: 4.5rem;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0 .25rem .25rem 0 !important;
+}
+
+.mu-navbar-container>nav>.container-xl {
+  max-width: unset;
+}
+
+.mu-navbar-logo {
+  margin: 0;
+  margin-left: -12px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  font-size: unset;
+  height: 40px;
+  width: calc(var(--sidebar-icon-box-width) + 36px);
+}
+
+.mu-navbar-logo>img {
+  max-height: 100%;
+}
+
+.mu-sidebar-container {
+  position: fixed;
+  height: calc(100vh - 56px);
+  top: 56px;
+  width: 4.5rem;
+}
+
+.mu-sidebar-icon-pills {
+  transition: 0.3s;
+}
+
+.mu-sidebar-icon-pills:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mu-sidebar-icon-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 56px;
+}
+
+.mu-sidebar-icon {
+  display: inline-block;
+  height: var(--sidebar-icon-box-height);
+  width: var(--sidebar-icon-box-width);
+  font-size: 16pt;
+}
